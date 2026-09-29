@@ -5969,6 +5969,18 @@ body.light-theme {
   gap: 7px
 }
 
+.session-actions {
+  display: flex;
+  gap: 8px;
+  flex: 0 0 auto
+}
+
+.session-actions button {
+  padding: 10px 12px;
+  font-size: .66rem;
+  white-space: nowrap
+}
+
 .compact-session {
   display: grid;
   grid-template-columns: 45px 1fr;
@@ -6006,6 +6018,14 @@ body.light-theme {
 .powerlifting-preview.open {
   display: block;
   animation: fade .3s ease
+}
+
+.workout-summary-view>.back-account {
+  margin-bottom: 18px
+}
+
+.workout-summary-view .powerlifting-preview {
+  margin: 0 0 42px
 }
 
 .powerlifting-preview>header {
@@ -7595,12 +7615,17 @@ body.light-theme {
     grid-template-columns: 52px 1fr
   }
 
-  .featured-session>.primary {
+  .featured-session>.primary,
+  .featured-session>.session-actions {
     grid-column: 2;
     justify-self: start
   }
 
-  .powerlifting-preview {
+  .session-actions {
+    flex-wrap: wrap
+  }
+
+  .performance-view .powerlifting-preview {
     margin-top: -24px
   }
 
