@@ -185,6 +185,28 @@
           <article><span data-icon="activity"></span><div><small>TRAINING LOAD</small><strong>18,420</strong><em>kg this month</em></div></article>
           <article><span data-icon="flame"></span><div><small>CURRENT STREAK</small><strong>9 days</strong><em>personal best</em></div></article>
         </div>
+        <div class="upcoming-heading"><div><p class="eyebrow">UPCOMING SESSIONS</p><h3>Train independently.</h3><p>Coach-programmed sessions to complete in your own time, with guidance at every step.</p></div><span>3 scheduled</span></div>
+        <div class="upcoming-session-grid">
+          <article class="upcoming-session featured-session">
+            <div class="session-date"><strong>01</strong><span>OCT</span></div>
+            <div class="session-type"><span class="self-guided-pill"><i></i> SELF-GUIDED</span><h3>Powerlifting foundations</h3><p>Squat, bench and deadlift technique with controlled strength work.</p><div><span>75 min</span><span>5 exercises</span><span>High intensity</span></div></div>
+            <button class="primary" id="viewPowerliftingSession">View session <span data-icon="chevron"></span></button>
+          </article>
+          <article class="upcoming-session compact-session"><div class="session-date"><strong>03</strong><span>OCT</span></div><div class="session-type"><span class="self-guided-pill"><i></i> SELF-GUIDED</span><h3>Upper strength</h3><p>Bench volume, rows and shoulders.</p></div><button data-session-toast="Upper strength">Preview</button></article>
+          <article class="upcoming-session compact-session"><div class="session-date"><strong>05</strong><span>OCT</span></div><div class="session-type"><span class="coach-led-pill">COACH-LED</span><h3>Movement review</h3><p>With Jordan · Studio 2</p></div><button data-view="bookings">Booking</button></article>
+        </div>
+        <section class="powerlifting-preview" id="powerliftingPreview" aria-hidden="true">
+          <header><div><span class="self-guided-pill"><i></i> SELF-GUIDED SESSION</span><p class="eyebrow">WEEK 7 · STRENGTH</p><h2>Powerlifting foundations.</h2><p>A focused session for confident competition lifts. Watch each indicative demonstration, record every set and leave a comment for your coach.</p></div><button type="button" id="closePowerliftingPreview" aria-label="Close session preview">×</button></header>
+          <div class="powerlifting-overview"><span><b>75</b> min</span><span><b>18</b> working sets</span><span><b>3</b> main lifts</span><span><b>2–3</b> min rest</span></div>
+          <div class="powerlifting-exercises">
+            <article><button class="indicative-demo squat-demo" type="button" data-indicative-video="Competition back squat"><span data-icon="play"></span><small>INDICATIVE VIDEO</small></button><div><span>01 · MAIN LIFT</span><h3>Competition back squat</h3><p>Work to a smooth top set, then complete three controlled back-off sets.</p><footer><b>4 sets</b><b>5 reps</b><b>180 sec rest</b></footer></div></article>
+            <article><button class="indicative-demo bench-demo" type="button" data-indicative-video="Paused bench press"><span data-icon="play"></span><small>INDICATIVE VIDEO</small></button><div><span>02 · MAIN LIFT</span><h3>Paused bench press</h3><p>Hold the bar motionless on the chest before pressing with intent.</p><footer><b>4 sets</b><b>5 reps</b><b>150 sec rest</b></footer></div></article>
+            <article><button class="indicative-demo deadlift-demo" type="button" data-indicative-video="Competition deadlift"><span data-icon="play"></span><small>INDICATIVE VIDEO</small></button><div><span>03 · MAIN LIFT</span><h3>Competition deadlift</h3><p>Build tension before the pull and finish tall without leaning back.</p><footer><b>4 sets</b><b>3 reps</b><b>180 sec rest</b></footer></div></article>
+            <article><button class="indicative-demo row-demo" type="button" data-indicative-video="Chest-supported row"><span data-icon="play"></span><small>INDICATIVE VIDEO</small></button><div><span>04 · ACCESSORY</span><h3>Chest-supported row</h3><p>Keep the torso supported and drive the elbows back.</p><footer><b>3 sets</b><b>10 reps</b><b>75 sec rest</b></footer></div></article>
+            <article><button class="indicative-demo core-demo" type="button" data-indicative-video="Weighted plank"><span data-icon="play"></span><small>INDICATIVE VIDEO</small></button><div><span>05 · CORE</span><h3>Weighted plank</h3><p>Brace hard and maintain a neutral position throughout.</p><footer><b>3 sets</b><b>30 sec</b><b>60 sec rest</b></footer></div></article>
+          </div>
+          <footer class="powerlifting-start"><div><span data-icon="clock"></span><p><strong>Automatic rest timer</strong><small>Starts whenever you mark a set complete.</small></p></div><div><span data-icon="message"></span><p><strong>Exercise comments</strong><small>Send technique notes and feedback to your coach.</small></p></div><button class="primary" id="startPowerliftingWorkout">Start session <span data-icon="play"></span></button></footer>
+        </section>
         <div class="builder-heading"><div><p class="eyebrow">WORKOUT BUILDER</p><h3>Build a workout in minutes.</h3><p>Drag exercises into the session or use Add. Reorder them to match your coaching plan.</p></div><button class="primary" id="saveWorkoutBuild">Save & assign <span data-icon="check"></span></button></div>
         <div class="workout-builder">
           <aside class="exercise-library-panel">
